@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jg-032316-sfx-8-bit-score-1.mp3-59049eb5fddfc92d8c5d78fb02ff83bb.mp3str"
+
+[deps]
+
+source_file="res://Objects/jg-032316-sfx-8-bit-score-1.mp3"
+dest_files=[ "res://.import/jg-032316-sfx-8-bit-score-1.mp3-59049eb5fddfc92d8c5d78fb02ff83bb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

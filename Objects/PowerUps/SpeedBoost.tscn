@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/PowerUps/SpeedBoost.gd" type="Script" id=1]
+[ext_resource path="res://Objects/PowerUps/speedboost.png" type="Texture" id=2]
+
+[node name="SpeedBoost" type="Area2D"]
+scale = Vector2( 0.025, 0.025 )
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = -1.5708
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+rotation = -1.5708
+polygon = PoolVector2Array( 68.7221, -370.45, 445.127, -9.63638, 73.1766, 353.405, -280.956, 353.405, -407.909, 230.906, -407.909, -247.952, -278.728, -370.45 )
+
+[connection signal="body_entered" from="." to="." method="_on_SpeedBoost_body_entered"]
